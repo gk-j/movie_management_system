@@ -1,0 +1,10 @@
+{% extends "mmsapp/base.html" %}
+{% block content %}
+    <div class="home-page">
+    <h1>Home Page</h1>
+    <div class="home-list">
+        <a href="{% url 'user-list' %}">Users</a>
+        <a href="{% url 'movies-list' %}">Movies</a>
+        <a href="{% url 'genre-list' %}">Genres</a>
+    </div>
+{% endblock content %}
